@@ -1,0 +1,66 @@
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    height: auto;
+}
+
+.containerWeather {
+    position: absolute;
+    top:12vh;
+    padding: 2rem;
+    min-height: 100vh;
+    width: 100% !important;
+    height: auto;   
+    background: rgb(255,255,255);
+    background: linear-gradient(135deg, rgba(255,255,255,1) 35%, rgba(225,210,246,0.804359243697479) 62%, rgba(143,88,223,1) 100%);
+}
+.card-picture {
+    position: relative;
+}
+.main-card .card-title {
+    margin: 1rem;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.react-bootstrap-table-pagination {
+    display: block !important;    
+    bottom: 0;
+}
+.weather-type {
+    position: absolute;
+    bottom: 0;
+    width: 55%;
+    height: 6vh;
+    background-color: rgba(143,88,223,0.9);
+    border-radius: 0 15px 15px 0;
+    padding-left: 10px;
+}
+.weather-data {
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.data-card {
+    width: 100%; 
+    margin-bottom:2rem;
+    background-color: white
+}
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+    
+    .add {
+        min-height: 60vh;
+        width: 100%;
+    }
+    .data-card {
+        height: auto;
+    }
+    .react-bootstrap-table {
+        overflow-x: auto;
+    }
+}
